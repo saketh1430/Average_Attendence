@@ -1,0 +1,6 @@
+time
+streamlit 
+option_menu
+pandas
+numpy
+webbrowser
