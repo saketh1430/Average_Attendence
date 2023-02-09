@@ -1,4 +1,4 @@
-import time
+
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
@@ -29,8 +29,7 @@ with st.sidebar:
 
 if selected=="Welcome":
     
-    with st.spinner('Wait for it...'):
-        time.sleep(2)
+   
         
     st.header("Welcome To Our Website")
     st.markdown("Here You Will Do Your Mid Marks Calculation📅 In an Easy and Efficent Manner")
@@ -51,8 +50,7 @@ if selected=="Welcome":
                 """,unsafe_allow_html=True)
 
 if selected=="Average":
-    with st.spinner('Wait for it...'):
-        time.sleep(2)
+    
     st.subheader('Note ⚠️:')
     st.subheader("Step 1: Make the Excel file in Below Format")
     st.image('1.png')
@@ -91,8 +89,7 @@ if selected=="Average":
         mime='text/csv',
         )
 if selected=="Attendence":
-        with st.spinner('Wait for it...'):
-            time.sleep(2)
+        
         s = st.file_uploader("Upload Csv",type=["txt","csv"])
         if s is not None:
             df = pd.read_csv(s)
@@ -134,8 +131,7 @@ if selected=="Attendence":
 
     
 if selected=="Mid Payments": 
-    with st.spinner('Wait for it...'):
-        time.sleep(2)
+    
 
     form = st.form("Form3")
   
@@ -148,7 +144,4 @@ if selected=="About Developer":
     st.subheader("Yashwanth => pulimiyashwanth123@gmail.com")
     st.subheader("Saketh => saketh9533886088@gmail.com")
         
-        
-        
-        
-# streamlit run main.py --server.enableXsrfProtection=false
+   
